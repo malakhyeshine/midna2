@@ -1,0 +1,127 @@
+use_synth:piano
+use_bpm 70
+3.times do
+  play :d3
+  sleep 0.25
+  play :e3
+  sleep 0.25
+  play :f3
+  sleep 0.25
+  play :a3
+  sleep 0.25
+  play :b3
+  sleep 0.25
+  play :d4
+  sleep 0.25
+end
+1.times do
+  play :g4
+  sleep 0.25
+  play :e4
+  sleep 0.25
+  play :c4
+  sleep 0.25
+  play :a3
+  sleep 0.25
+  play :f3
+  sleep 0.25
+  play :e3
+  sleep 0.25
+end
+  live_loop :midna do
+    play :d3
+    sleep 0.25
+    play :e3
+    sleep 0.25
+    play :f3
+    sleep 0.25
+    play :a3
+    sleep 0.25
+    play :b3
+    sleep 0.25
+    play :d4
+    sleep 0.25
+  end
+  1.times do
+    play :a4, amp:3
+    sleep 1
+    play :f5, amp:3
+    sleep 0.5
+    play :e5, amp:3
+    sleep 1
+    play :c5, amp:3
+    sleep 0.5
+    play :b4, amp:3
+    sleep 1
+    play :a4, amp:3
+    sleep 0.25
+    play :g4, amp:3
+    sleep 0.25
+    play :b4, amp:3
+    sleep 4
+  end
+  1.times do
+    play :d5, amp:3
+    sleep 0.25
+    play :a5, amp:3
+    sleep 0.25
+    play :e5, amp:3
+    sleep 0.5
+    play :d5, amp:3
+    sleep 0.25
+    play :a5, amp:3
+    sleep 0.25
+    play :e5, amp:3
+    sleep 2
+  end
+  1.times do
+    play :a4, amp:3
+    sleep 1
+    play :f5, amp:3
+    sleep 0.5
+    play :e5, amp:3
+    sleep 1
+    play :c5, amp:3
+    sleep 0.5
+    play :d5, amp:3
+    sleep 1
+    play :e5, amp:3
+    sleep 0.25
+    play :f5, amp:3
+    sleep 0.25
+    play :g5, amp:3
+    sleep 4
+  end
+  1.times do
+    play :f5, amp:3
+    sleep 0.25
+    play :a5, amp:3
+    sleep 0.25
+    play :e6, amp:3
+    sleep 0.25
+    play :f5, amp:3
+    sleep 0.25
+    play :e5, amp:3
+    sleep 2
+    play :a5, amp:3
+    sleep 2
+  end
+  1.times do
+    play :db5, amp:3
+    sleep 1
+    play :ab5, amp:3
+    sleep 1
+    play :a5, amp:3
+    sleep 1
+    play :f5, amp:3
+    sleep 1
+    play :g5, amp:3
+    sleep 2
+    play :f5, amp:3
+    sleep 0.25
+    play :g5, amp:3
+    sleep 0.25
+    play :e5, amp:3
+    sleep 4
+  end
+  
