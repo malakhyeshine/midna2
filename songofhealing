@@ -1,0 +1,92 @@
+# Welcome to Sonic Pi v2.11.
+use_bpm 50
+use_synth :piano
+x=:c3
+b=2
+2.times do
+  play :b3, amp:3
+  sleep 0.5
+  play :a3, amp:3
+  sleep 0.5
+  play :f3, amp:3
+  sleep 0.5
+end
+1.times do
+  play :b3, amp:3
+  sleep 0.5
+  play :a3, amp:3
+  sleep 0.5
+  play :g3, amp:3
+  sleep 0.25
+  play :f3, amp:3
+  sleep 0.25
+  play :g3, amp:3
+  sleep 0.5
+end
+11.times do
+  play x, amp:b
+  sleep 0.5
+  x=x+3
+  b=b+2
+end
+use_synth :hoover
+2.times do
+  play :b3, amp:3
+  sleep 0.5
+  play :a3, amp:3
+  sleep 0.5
+  play :f3, amp:3
+  sleep 0.5
+end
+1.times do
+  play :b3, amp:3
+  sleep 0.5
+  play :a3, amp:3
+  sleep 0.5
+  play :g3, amp:3
+  sleep 0.25
+  play :f3, amp:3
+  sleep 0.25
+  play :g3, amp:3
+  sleep 1
+end
+2.times do
+  play :f3, amp:3
+  sleep 0.5
+  play :c3, amp:3
+  sleep 0.5
+  play :b2, amp:3
+  sleep 0.5
+end
+1.times do
+  play :f3, amp:3
+  sleep 0.5
+  play :c3, amp:3
+  sleep 0.5
+  play :b2, amp:3
+  sleep 0.25
+  play :a2, amp:3
+  sleep 0.5
+  play :b2, amp:3
+  sleep 2
+end
+2.times do
+  play :f3, amp:3
+  sleep 0.5
+  play :c3, amp:3
+  sleep 0.5
+  play :b2, amp:3
+  sleep 0.5
+end
+1.times do
+  play :f3, amp:3
+  sleep 0.5
+  play :e3, amp:3
+  sleep 0.5
+  play :e3, amp:3
+  play :b3, amp:3
+  sleep 0.5
+  play :e3, amp:3
+  play :g3, amp:3
+  sleep 1
+end
