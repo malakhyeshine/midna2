@@ -1,8 +1,8 @@
 # Welcome to Sonic Pi v2.11.
-use_bpm 50
+use_bpm 55
 use_synth :piano
-x=:c3
-b=2
+x=:c3 #My starting note for the build up
+b=2 #The starting amp for the build up
 2.times do
   play :b3, amp:3
   sleep 0.5
@@ -23,13 +23,13 @@ end
   play :g3, amp:3
   sleep 0.5
 end
-11.times do
+11.times do # This is the build up it starts at c3 and continues getting louder and goes up a pitch
   play x, amp:b
   sleep 0.5
   x=x+3
   b=b+2
 end
-use_synth :hoover
+use_synth :hoover #I change the synth to give it a different sound
 2.times do
   play :b3, amp:3
   sleep 0.5
